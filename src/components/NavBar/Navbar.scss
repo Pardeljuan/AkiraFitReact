@@ -1,0 +1,34 @@
+
+.nav-bar {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    z-index: 1000; 
+  
+    .logo img {
+      height: 60px;
+    }
+      .Option {
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        margin: 5rem;
+        text-decoration: none;
+        &:hover {
+          color: rgb(217, 214, 214);
+          will-change: filter;
+          transition: filter 300ms;
+          filter: drop-shadow(0 0 1em #ffffffaa);
+          
+        }
+  
+        }
+    }
+  
+  
+  
