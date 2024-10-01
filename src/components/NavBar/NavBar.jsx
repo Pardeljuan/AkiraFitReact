@@ -13,7 +13,7 @@ export const NavBar = () => {
             <div className="Categories">
                 <NavLink to={`/category/Hombre`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Hombre</NavLink>
                 <NavLink to={`/category/Mujer`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Mujer</NavLink>
-                <NavLink to={`/category/Todo`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Listado</NavLink>
+                <NavLink to={`/`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Listado</NavLink>
             </div>
             <CartWidgets/>
         </nav>

@@ -5,6 +5,7 @@ import { getProducts, getProductsByCategory } from '../../../listado';
 import { ItemList } from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
 
+
 export const ItemListContainer = ({ greeting }) => {
   const [products, setProducts] = useState([])
 

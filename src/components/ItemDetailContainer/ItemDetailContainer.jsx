@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import {getProductById} from '../../../listado'
 import {ItemDetail} from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
+import './ItemDetailConteiner.scss'
 
 export const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null)
