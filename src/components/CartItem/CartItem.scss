@@ -1,0 +1,44 @@
+.cart-item {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 15px 0;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 7rem;
+    &__image {
+        width: 100px; // Ajusta el tamaño de la imagen según necesites
+        height: auto;
+        border-radius: 4px;
+        margin-right: 15px;
+    }
+
+    &__details {
+        flex-grow: 1;
+
+        &__name {
+            font-size: 1.2rem;
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        &__price,
+        &__quantity,
+        &__total {
+            margin: 5px 0;
+            color: #555;
+            font-size: 1rem;
+            .out-of-stock {
+                background-color: #FFD700; /* Color de fondo amarillo */
+                color: #000; /* Color de texto negro */
+                padding: 10px; /* Espaciado interno */
+                border-radius: 5px; /* Bordes redondeados */
+                font-weight: bold; /* Texto en negrita */
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+                margin-top: 10px; /* Espaciado superior */
+                display: inline-block; /* Ajustar el tamaño al contenido */
+            }
+        }
+    }
+}

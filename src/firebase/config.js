@@ -1,15 +1,15 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC7iMbsx86L-49DAwSS5pnrpkQeL_4PWH0",
-  authDomain: "akirafit44.firebaseapp.com",
-  projectId: "akirafit44",
-  storageBucket: "akirafit44.appspot.com",
-  messagingSenderId: "541154952687",
-  appId: "1:541154952687:web:e19e45e673dcc8b290a21a",
-  measurementId: "G-Y6FQ6K9ERZ"
+  apiKey: 'AIzaSyA1woLZtDIrQh7GBkRhR3uUQZF5J7fZ1TU',
+  authDomain: 'akirafitind.firebaseapp.com',
+  projectId: 'akirafitind',
+  storageBucket: 'akirafitind.appspot.com',
+  messagingSenderId: 779826621669,
+  appId: '1:779826621669:web:4aaba5857927a2ba44b80c',
+ 
 };
 
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+export const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app)

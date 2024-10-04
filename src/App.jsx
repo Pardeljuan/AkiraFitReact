@@ -6,7 +6,8 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import {ItemCount} from './components/ItemCount/ItemCount';
 import {ItemDetailContainer} from './components/ItemDetailContainer/ItemDetailContainer'
 import { CartProvider } from './context/CartContext';
-
+import {Cart} from './components/Cart/Cart'
+import Checkout from './components/Checkout/Checkout';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
             <Route path='/' element={<ItemListContainer />} />
             <Route path='/category/:categoryId' element={<ItemListContainer/>} /> 
             <Route path='/item/:itemId' element={<ItemDetailContainer />} />
+            <Route path='/cart' element={<Cart />} />
+            <Route path='/Checkout' element={<Checkout />} />
             <Route path='*' element={<h1>404 NOT FOUND</h1>} />
           </Routes>
           </CartProvider>

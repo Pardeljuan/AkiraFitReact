@@ -1,14 +1,14 @@
 import './Item.scss'
 import { Link } from 'react-router-dom'
 
-export const Item = ({id, name, img, price, stock}) => {
+export const Item = ({id, name, image, price, stock}) => {
     return (
         <article className="CardItem">
             <header className="Header">
                 <h2 className="ItemHeader">{name}</h2>
             </header>
             <picture>
-                <img src={`../../../public/${img}`} alt={name} className="ItemImg" />
+                <img src={`${image}`} alt={name} className="ItemImg" />
             </picture>
             <section>
                 <p className="Info">
